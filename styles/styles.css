@@ -1,0 +1,418 @@
+body,
+html {
+  width: 100vw;
+  height: 100vw;
+  margin: 0;
+  font-size: 1.35vw;
+  font-family: "Lato", sans-serif;
+}
+
+/* Adjust font size for different devices such as phones, tablets and laptops */
+
+/* Modified https://codepen.io/erikterwan/pen/EVzeRP for the navbar */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 3.2vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 2.6vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1.4vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 1.2vw;
+  }
+}
+
+/* Mobile navigation with hamburger menu */
+
+nav {
+  top: 50px;
+  left: 50px;
+
+  display: block;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  flex-direction: column;
+
+  width: 100vw;
+  display: flex;
+  margin: -100px 0 0 -50px;
+  padding: 125px 50px 50px;
+  position: absolute;
+  box-sizing: border-box;
+
+  transform: translate(-100%, 0);
+  transform-origin: 0% 0%;
+  background-color: #ededed;
+}
+
+nav ul a {
+  color: black;
+  transition: color 0.3s ease;
+
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: red;
+}
+
+nav ul li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+nav ul .active {
+  font-weight: 600;
+}
+
+nav span {
+  width: 33px;
+  height: 4px;
+  margin: 0 0 5px;
+  display: block;
+  position: relative;
+  background: #ededed;
+  transition: transform 0.5s ease, background 0.5s ease;
+
+  z-index: 1;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+}
+
+nav span:nth-last-child(0) {
+  transform-origin: 0% 0%;
+}
+
+nav span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+nav input {
+  top: -12px;
+  left: -13px;
+  width: 40px;
+  height: 32px;
+
+  cursor: pointer;
+  display: block;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 2;
+}
+
+nav input:checked ~ ul {
+  transform: none;
+}
+
+/* Transform all the slices of hamburger into a crossmark */
+
+nav input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/* Hide the middle row */
+
+nav input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* The last row should go the other direction */
+
+nav input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Switch away from hamburger menu if the machine is wide enough */
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    margin: -50px 0 0 -50px;
+    padding: 2.5rem 2rem;
+    background: none;
+    flex-direction: row;
+  }
+
+  nav ul a {
+    padding: 1.5rem;
+    margin-right: 2rem;
+    background-color: #ededed;
+    color: black;
+  }
+
+  nav span,
+  nav input {
+    display: none;
+  }
+
+  nav ul {
+    transform: none;
+  }
+}
+
+/* Styling for the default banner on every page */
+
+header {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-size: cover;
+  background-image: url("../images/banner/index.jpg");
+  background-position: center;
+}
+
+header nav li:last-of-type a {
+  border-right: none;
+}
+
+header h1 {
+  margin: 2rem;
+  padding: 1.5rem;
+
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #ededed;
+}
+
+header h1 span {
+  font-weight: 500;
+}
+
+/* Custom header image for every page */
+
+#famous header {
+  background-image: url("../images/banner/famous.jpg");
+}
+
+#started header {
+  background-image: url("../images/banner/started.jpg");
+}
+
+#recognize header {
+  background-image: url("../images/banner/recognize.jpg");
+}
+
+/* Default styling for the sections */
+
+section {
+  margin: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1.5rem 2rem 1.75rem;
+  display: flex;
+  transition: box-shadow 0.2s ease;
+
+  border-radius: 1rem;
+  flex-direction: column;
+}
+
+section:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+section a {
+  color: black;
+}
+
+section a:hover {
+  color: #a9a9a9;
+}
+
+section p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+section p:last-of-type {
+  margin-top: 1rem;
+}
+
+section h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+section div {
+  width: 100%;
+  height: 10vh;
+
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+
+  background-size: cover;
+  background-position: center;
+}
+
+section div:first-of-type {
+  background-image: url("../images/banner/gold.png");
+}
+
+section div:last-of-type {
+  background-image: url("../images/banner/stock.png");
+}
+
+/* Copied quote styling from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote */
+
+section figure {
+  margin: 1rem 0;
+}
+
+section figcaption {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+section blockquote {
+  margin: 0;
+}
+
+section blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+section blockquote p::before {
+  content: "\201C";
+}
+
+section blockquote p::after {
+  content: "\201D";
+}
+
+section ol li {
+  margin-top: 1rem;
+}
+
+/* Match the font-size of the ordered list numbering with the title */
+
+section ol li h2,
+section ol li::marker {
+  font-size: 1.25rem;
+}
+
+/* Famous page */
+
+#famous section {
+  padding: 0;
+}
+
+#famous section figure {
+  margin: 0;
+  display: flex;
+  padding: 2rem;
+  position: relative;
+  flex-direction: column;
+}
+
+#famous section figure p {
+  margin: 0;
+}
+
+#famous section figure p:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+#famous section figure h2 {
+  color: #212529;
+  margin: 0 0 0.75rem 0;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#famous section figure figcaption {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* :last-of-type refers to the <img> element */
+
+#famous section figure:last-of-type {
+  padding: 0;
+}
+
+#famous section figure:last-of-type figcaption {
+  left: 1.25rem;
+  bottom: 1.25rem;
+  position: absolute;
+}
+
+#famous section figure img {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 0 1rem 1rem;
+}
+
+#famous figure:last-of-type figcaption,
+#famous figure:last-of-type figcaption a {
+  color: white;
+}
+
+#famous figure:last-of-type figcaption a:hover {
+  color: #cccccc;
+}
+
+/* Switch the column design into rows for wider machines */
+
+@media only screen and (min-width: 768px) {
+  #famous section {
+    flex-direction: row;
+  }
+
+  #famous section figure img {
+    border: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  #famous section:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  #famous section:nth-of-type(even) figure img {
+    border: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  #famous section figure {
+    width: 60%;
+  }
+
+  #famous section figure:last-of-type {
+    width: 40%;
+  }
+
+  #famous section figure figcaption {
+    margin-top: auto;
+  }
+}
