@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../assets/FilsonProRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+	font-family: 'AcuminVariable';
+	src: url('../assets/AcuminVariableConcept.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	padding: 1.75rem 1.75rem 0;
+	background-color: #FFFFFF;
+}
+
+img {
+	width: 30%;
+	float: right;
+	margin: -1.75rem -1.75rem 0;
+}
+
+h1, h2 {
+	font-size: 2em;
+	font-family: 'FilsonPro', sans-serif;   
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #5475B6;
+	margin: 0 0 0.75rem;
+}
+
+h2 {
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+footer {
+	color: #6D6F71;
+	opacity: .5;
+	padding: .5rem 0 1.5rem;
+	margin: auto 0 0;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1em;
+	font-family: 'AcuminVariable', sans-serif;
+}
+
+.divider {
+	height: 10vh;
+	margin: 1.5rem 0 .5rem;
+	border-radius: 0 1.5rem 0 1.5rem;
+	background-image: url("../images/placeholder.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+	width: 100%;
+	color: #EB4F75;
+	display: block;
+
+	font-size: 1rem;
+	text-align: center;
+	font-family: 'FilsonPro', sans-serif;
+
+	margin: 1rem 0;
+	border: #EB4F75 1px solid;
+	padding: .75rem;
+
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.button:first-of-type {
+	margin: 2rem 0 0;
+}
+
+a {
+	color: #EB4F75;
+}
+
+a:active,
+a:hover {
+	color: white;
+	background-color: #EB4F75;
+}
+
+ul, ol, p {
+	font-size: 1em;
+	font-family: 'AcuminVariable', sans-serif;
+
+	color: #6D6F71;
+	margin: 0 0 0.5em;
+}
+
+ol {
+	padding-left: 1rem;
+}
+
+li {
+	margin-bottom: .5rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section {
+	padding: .5rem 0;
+}
+
+div {
+	background-image: url("../images/placeholder.png");
+
+  /* Set a specific height */
+  height: 15vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* section:first-of-type {
+	padding: 0;
+} */
+
+/*
+blockquote {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.4em;
+	color: #0C1E32;
+	font-weight: 500;
+	text-align: center;
+	width: 335px;
+	height: 335px;
+	padding-top: 80px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 1.8em auto 1.8em auto;
+	border: 1px solid transparent;
+	border-image-source: url(../images/hoekjes.png);
+	border-image-width: 100px;
+	border-image-slice: 100;
+}
+*/
