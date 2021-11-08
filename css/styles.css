@@ -133,27 +133,3 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* section:first-of-type {
-	padding: 0;
-} */
-
-/*
-blockquote {
-	font-family: 'FilsonPro', sans-serif;   
-	font-size: 1.4em;
-	color: #0C1E32;
-	font-weight: 500;
-	text-align: center;
-	width: 335px;
-	height: 335px;
-	padding-top: 80px;
-	padding-left: 40px;
-	padding-right: 40px;
-	margin: 1.8em auto 1.8em auto;
-	border: 1px solid transparent;
-	border-image-source: url(../images/hoekjes.png);
-	border-image-width: 100px;
-	border-image-slice: 100;
-}
-*/
