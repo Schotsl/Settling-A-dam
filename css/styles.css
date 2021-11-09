@@ -145,9 +145,8 @@ header {
 }
 
 nav {
-  top: 1.95rem;
-  left: 1.85rem;
-
+  width: 100vw;
+  padding: 1.85rem;
   display: block;
   position: relative;
 }
@@ -163,6 +162,7 @@ nav input {
   left: -5px;
   width: 40px;
   height: 32px;
+  margin: 1.85rem;
   display: block;
   position: absolute;
 
