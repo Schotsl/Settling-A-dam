@@ -215,7 +215,7 @@ nav ul {
   height: 100vh;
   margin: -3.7rem 0 0 -1.85rem;
   padding: 1.75rem;
-  padding-top: 5.55rem;
+  padding-top: 4.25rem;
 
   background: #fff;
   list-style-type: none;
@@ -226,10 +226,17 @@ nav ul {
   transition: transform 0.35s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
+
 nav ul li {
   padding: 10px 0;
+  font-size: 18px;
+}
+
+nav ul a:nth-of-type(1) li,
+nav ul a:nth-of-type(2) li {
   font-size: 22px;
 }
+
 
 nav input:checked ~ ul {
   transform: none;
