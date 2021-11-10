@@ -23,6 +23,10 @@ body {
   min-height: 100%;
 }
 
+html {
+  position: relative;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -146,9 +150,8 @@ header {
 
 nav {
   width: 100vw;
-  padding: 1.85rem;
   display: block;
-  position: relative;
+  padding: 1.85rem;
 }
 
 nav a {
@@ -168,7 +171,7 @@ nav input {
 
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 nav span {
@@ -179,7 +182,7 @@ nav span {
   position: relative;
   background: #fff;
 
-  z-index: 1;
+  z-index: 2;
   border-radius: 3px;
   transform-origin: 4px 0px;
 
@@ -210,19 +213,19 @@ nav input:checked ~ span:nth-last-child(2) {
 }
 
 nav ul {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 4.25rem 1.75rem;
   position: absolute;
-  width: 100%;
-  height: 100vh;
-  margin: -3.7rem 0 0 -1.85rem;
-  padding: 1.75rem;
-  padding-top: 4.25rem;
 
+  z-index: 1;
   background: #fff;
   list-style-type: none;
-
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
 
+  transform: translate(-100%, 0);
   transition: transform 0.35s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
