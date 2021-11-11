@@ -268,9 +268,9 @@ main section {
   padding: 0.5rem 0;
 }
 
-/* I would've preferred a button class but we're anti-class these days */
+/* I know we're not big fans of classes but I feel like there really is no need to make this element page specific */
 
-.index main a {
+.button {
   width: 100%;
   color: #eb4f75;
   display: block;
@@ -286,12 +286,12 @@ main section {
   background: transparent;
 }
 
-.index main a:first-of-type {
+.button:first-of-type {
   margin: 2rem 0 0;
 }
 
-.index main a:hover,
-.index main a:active {
+.button:hover,
+.button:active {
   color: white;
   background: #eb4f75;
 }
