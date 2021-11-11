@@ -106,6 +106,8 @@ ol {
   margin: 0 0 0.5em;
 }
 
+/* Inspired by / modified from https://codepen.io/erikterwan/pen/EVzeRP */
+
 nav {
   width: 100vw;
   display: block;
@@ -266,7 +268,9 @@ main section {
   padding: 0.5rem 0;
 }
 
-.button {
+/* I would've preferred a button class but we're anti-class these days */
+
+.index main a {
   width: 100%;
   color: #eb4f75;
   display: block;
@@ -282,12 +286,12 @@ main section {
   background: transparent;
 }
 
-.button:first-of-type {
+.index main a:first-of-type {
   margin: 2rem 0 0;
 }
 
-.button:hover,
-.button:active {
+.index main a:hover,
+.index main a:active {
   color: white;
   background: #eb4f75;
 }
