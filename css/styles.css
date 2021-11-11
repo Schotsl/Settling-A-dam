@@ -31,11 +31,41 @@ body {
 
 header {
   height: 15vh;
-  background: url("../images/header.png");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.insurance header {
+  background-image: url("../images/banners/insurance_blue.png ");
+}
+
+.digid header {
+  background-image: url("../images/banners/digid_blue.png");
+}
+
+.index header {
+  background-image: url("../images/banners/index_blue.png");
+}
+
+.short header {
+  background-image: url("../images/banners/short_blue.png ");
+}
+
+.long header {
+  background-image: url("../images/banners/long_blue.png");
+}
+
+.bank header {
+  background-image: url("../images/banners/bank_blue.png");
+}
+
+.bsn header {
+  background-image: url("../images/banners/bsn_blue.png");
+}
+
+.ov header {
+  background-image: url("../images/banners/ov_blue.png");
 }
 
 footer {
