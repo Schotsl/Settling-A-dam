@@ -36,35 +36,35 @@ header {
   background-position: center;
 }
 
-.insurance {
+.insurance header {
   background-image: url("./images/banners/insurance_blue.png ");
 }
 
-.digid {
+.digid header {
   background-image: url("./images/banners/digid_blue.png");
 }
 
-.index {
+.index header {
   background-image: url("./images/banners/index_blue.png");
 }
 
-.short {
+.short header {
   background-image: url("./images/banners/short_blue.png ");
 }
 
-.long {
+.long header {
   background-image: url("./images/banners/long_blue.png");
 }
 
-.bank {
+.bank header {
   background-image: url("./images/banners/bank_blue.png");
 }
 
-.bsn {
+.bsn header {
   background-image: url("./images/banners/bsn_blue.png");
 }
 
-.ov {
+.ov header {
   background-image: url("./images/banners/ov_blue.png");
 }
 
