@@ -1,13 +1,13 @@
 @font-face {
   font-family: "FilsonPro";
-  src: url("../assets/FilsonProRegular.otf");
+  src: url("./assets/FilsonProRegular.otf");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "AcuminVariable";
-  src: url("../assets/AcuminVariableConcept.otf");
+  src: url("./assets/AcuminVariableConcept.otf");
   font-style: normal;
   font-weight: 300;
 }
@@ -37,35 +37,35 @@ header {
 }
 
 .insurance header {
-  background-image: url("../images/banners/insurance_blue.png ");
+  background-image: url("./images/banners/insurance_blue.png ");
 }
 
 .digid header {
-  background-image: url("../images/banners/digid_blue.png");
+  background-image: url("./images/banners/digid_blue.png");
 }
 
 .index header {
-  background-image: url("../images/banners/index_blue.png");
+  background-image: url("./images/banners/index_blue.png");
 }
 
 .short header {
-  background-image: url("../images/banners/short_blue.png ");
+  background-image: url("./images/banners/short_blue.png ");
 }
 
 .long header {
-  background-image: url("../images/banners/long_blue.png");
+  background-image: url("./images/banners/long_blue.png");
 }
 
 .bank header {
-  background-image: url("../images/banners/bank_blue.png");
+  background-image: url("./images/banners/bank_blue.png");
 }
 
 .bsn header {
-  background-image: url("../images/banners/bsn_blue.png");
+  background-image: url("./images/banners/bsn_blue.png");
 }
 
 .ov header {
-  background-image: url("../images/banners/ov_blue.png");
+  background-image: url("./images/banners/ov_blue.png");
 }
 
 footer {
@@ -188,7 +188,7 @@ nav ul {
   transition: transform 0.35s cubic-bezier(0.77, 0.2, 0.05, 1);
 
   background-size: 10vw;
-  background-image: url("../images/sidebar.png");
+  background-image: url("./images/sidebar.png");
   background-repeat: repeat-y;
   background-position: right;
 }
@@ -237,7 +237,7 @@ main div {
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/header.png");
+  background-image: url("./images/header.png");
   background-position: center;
 }
 
