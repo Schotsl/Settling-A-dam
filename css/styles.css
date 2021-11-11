@@ -177,6 +177,19 @@ nav input:checked ~ ul {
   transform: none;
 }
 
+/* Made using https://css-tricks.com/styling-underlines-web/ */
+
+nav ul .active a {
+  border-bottom: 2px solid #5475b6;
+  display: inline-block;
+  line-height: 0.85;
+  text-shadow:
+    2px 2px #fff,
+    2px -2px #fff,
+    -2px 2px #fff,
+    -2px -2px #fff;
+}
+
 main {
   padding: 1.75rem 1.75rem 0;
 }
