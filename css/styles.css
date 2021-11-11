@@ -114,7 +114,8 @@ nav span {
   border-radius: 3px;
   transform-origin: 4px 0px;
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 nav span:first-child {
@@ -167,9 +168,9 @@ nav ul li {
   font-size: 18px;
 }
 
-nav ul a:nth-of-type(1) li,
-nav ul a:nth-of-type(2) li {
-  font-size: 22px;
+nav ul li:nth-of-type(1) a,
+nav ul li:nth-of-type(2) a {
+  font-size: 24px;
 }
 
 nav input:checked ~ ul {
